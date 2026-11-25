@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ember Pass Kitchen — juggle the burn: 4 burners, 12 recipes, 3 stations, 90-second rush</title>
+<style>
+  html, body { margin: 0; height: 100%; overflow: hidden; background: #2e1f16; }
+  #game { position: fixed; inset: 0; width: 100%; height: 100%; display: block; touch-action: none; }
+  /* Read aloud, never shown: the status line screen readers announce. */
+  #status { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+</style>
+</head>
+<body>
+<canvas id="game" aria-label="Ember Pass Kitchen: a 90-second cooking rush. Grab ingredients, chop them, cook them, juggle the burn, plate and serve."></canvas>
+<p id="status" role="status" aria-live="polite"></p>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
